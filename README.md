@@ -5,12 +5,10 @@ Overview
 
 
 This is a simple, responsive quiz web application built with HTML, CSS, and JavaScript. It presents multiple-choice questions one at a time, allows users to select answers, and provides
-
 immediate feedback by highlighting correct and incorrect options. The quiz tracks the score and displays the result at the end.
 
 
 Features
-
 
 Responsive design for desktop and mobile devices
 
@@ -46,8 +44,8 @@ Click the "Next Question" button to proceed.
 
 View your score at the end of the quiz.
 
-Folder Structure
 
+Folder Structure
 
 / (root)
 
