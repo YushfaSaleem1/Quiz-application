@@ -1,0 +1,119 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(https://i.pinimg.com/736x/d9/ff/d1/d9ffd1db37273698a33b3e6e17adf486.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.card1 {
+    background-color: rgba(248, 238, 238, 0.65);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    margin: 80px auto;
+    width: 90%;
+    max-width: 650px;
+    min-height: 450px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.card1 .question {
+    font-size: 2rem; /* 32px approx */
+    color: rgb(73, 73, 73);
+    margin-bottom: 30px;
+}
+
+.card1 .option {
+    margin-top: 20px;
+    border: 2px solid black;
+    font-size: 1.2rem; /* 20px approx */
+    line-height: 1.8;
+    padding: 10px;
+    width: 100%;
+    max-width: 500px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.card1 .option:hover {
+    background-color: rgba(255, 255, 0, 0.23);
+}
+
+.card1 button {
+    background-color: rgba(255, 255, 0, 0.82);
+    color: black;
+    font-weight: 900;
+    border: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 200px;
+    font-size: 1.5rem; /* 24px approx */
+    border-radius: 20px;
+    margin: 30px 0 0 0;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card1 button:active {
+    background-color: red;
+}
+
+.result {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card1 {
+        min-height: auto;
+        margin: 40px 20px;
+        padding: 15px;
+    }
+
+    .card1 .question {
+        font-size: 1.6rem; /* smaller font */
+        margin-bottom: 20px;
+    }
+
+    .card1 .option {
+        font-size: 1rem;
+        max-width: 100%;
+        padding: 8px;
+    }
+
+    .card1 button {
+        width: 100%;
+        font-size: 1.3rem;
+        padding: 12px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .card1 .question {
+        font-size: 1.3rem;
+    }
+
+    .card1 .option {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    .card1 button {
+        font-size: 1.1rem;
+        padding: 10px;
+    }
+}
